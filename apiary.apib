@@ -8,7 +8,7 @@ HOST: https://api.4virtuals.com
 Send licenses to users that purchase your products. Licensing includes code management, global variables, HWID restriction, ban messages, program messages, ticketing, and more.
 
 
-## Validate [/license/validate{?license_product_id,license,hwid}]
+## Validate [/license/validate?license_product_id={license_product_id}&license={license}&hwid={hwid}]
 Validate a license that is given to your users.
 
 + Parameters
@@ -37,7 +37,7 @@ Validate a license that is given to your users.
             { "error": "License is required." }
             
             
-## Globals [/license/globals{?license_product_id,license,hwid,key}]
+## Globals [/license/globals?license_product_id={license_product_id}&license={license}&hwid={hwid}&key={key}]
 Lookup a global variable by key.
 
 + Parameters
@@ -62,7 +62,7 @@ Lookup a global variable by key.
             { "error": "No global with key not_a_key." }
             
             
-## Messages [/license/messages{?license_product_id,license,hwid,page,count}]
+## Messages [/license/messages?license_product_id={license_product_id}&license={license}&hwid={hwid}&page={page}&count={count}]
 Get messages that are set by the product owner in the 4Virtuals dashboard.
 
 + Parameters
@@ -113,7 +113,7 @@ Get messages that are set by the product owner in the 4Virtuals dashboard.
             
             { "error": "No global with key not_a_key." }
             
-## Tickets [/license/ticket{?license_product_id,license,hwid}]
+## Tickets [/license/ticket?license_product_id={license_product_id}&license={license}&hwid={hwid}]
 Create support tickets with you customers. Redirect your customers to the URL in the response.
 
 + Parameters
